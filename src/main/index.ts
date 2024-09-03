@@ -2,6 +2,7 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
+import { MLSOperations } from '@uneycom/uney-chat-e2ee-sdk'
 
 function createWindow(): void {
   // Create the browser window.
@@ -59,6 +60,11 @@ app.whenReady().then(() => {
     // dock icon is clicked and there are no other windows open.
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
+
+  const x = new MLSOperations()
+  x.initialize({
+    databasePath: 'demkd'
+  }).then((res) => console.log(res))
 })
 
 // Quit when all windows are closed, except on macOS. There, it's common

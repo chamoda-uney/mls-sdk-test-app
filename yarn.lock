@@ -866,6 +866,11 @@
     "@typescript-eslint/types" "7.18.0"
     eslint-visitor-keys "^3.4.3"
 
+"@uneycom/uney-chat-e2ee-sdk@0.0.1-alpha.28":
+  version "0.0.1-alpha.28"
+  resolved "https://npm.pkg.github.com/download/@uneycom/uney-chat-e2ee-sdk/0.0.1-alpha.28/6dcc860c084391451bf2cfdfff47b940ddf2dc3b#6dcc860c084391451bf2cfdfff47b940ddf2dc3b"
+  integrity sha512-64+bDBQHMXsz8W8tpn1a8hEa3vReBnsyaTunb13tmNT+ZW7KfEgB0Gxun+TOtnbbVmUhHvreDztz1SzLnNKkrw==
+
 "@ungap/structured-clone@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"

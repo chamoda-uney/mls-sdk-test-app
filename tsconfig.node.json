@@ -3,6 +3,9 @@
   "include": ["electron.vite.config.*", "src/main/**/*", "src/preload/**/*"],
   "compilerOptions": {
     "composite": true,
-    "types": ["electron-vite/node"]
+    "types": ["electron-vite/node"],
+    "paths": {
+     "@uneycom/uney-chat-e2ee-sdk": ["./node_modules/@uneycom/uney-chat-e2ee-sdk/lib/typescript/module/src"]
+    }
   }
 }
