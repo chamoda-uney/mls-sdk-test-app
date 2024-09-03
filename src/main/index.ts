@@ -61,10 +61,12 @@ app.whenReady().then(() => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
 
-  const x = new MLSOperations()
-  x.initialize({
-    databasePath: 'demkd'
-  }).then((res) => console.log(res))
+  const mlsOps = new MLSOperations()
+  mlsOps
+    .initialize({
+      databasePath: 'demkd'
+    })
+    .then((res) => console.log('the resut returned by rust is : ', res))
 })
 
 // Quit when all windows are closed, except on macOS. There, it's common
